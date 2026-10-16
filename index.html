@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nuvola Diary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <marquee bgcolor="#ffccdd" scrollamount="5" scrolldelay="100">Welcome to Nuvola Diary - Write your thoughts in the clouds...</marquee>
+
+    <div class="main-container">
+        <header>
+            <h1>Nuvola Diary</h1>
+        </header>
+
+        <main>
+            <section class="diary-entry">
+                <h2>New Entry</h2>
+                <form>
+                    <label for="date">Date:</label>
+                    <input type="text" id="date" name="date" placeholder="DD/MM/YYYY">
+                    
+                    <label for="entry">Your Thoughts:</label>
+                    <textarea id="entry" name="entry" rows="10" cols="50"></textarea>
+                    
+                    <div class="button-group">
+                        <button type="submit">Save Entry</button>
+                        <button type="reset">Clear</button>
+                    </div>
+                </form>
+            </section>
+
+            <aside>
+                <h3>Recent Entries</h3>
+                <ul>
+                    <li>Entry 1...</li>
+                    <li>Entry 2...</li>
+                </ul>
+            </aside>
+        </main>
+
+        <footer>
+            <div class="visitor-counter">Visitor Counter: <span id="counter">0</span></div>
+            <div class="resolution-badge">Best viewed in 800x600 resolution</div>
+        </footer>
+    </div>
+</body>
+</html>
